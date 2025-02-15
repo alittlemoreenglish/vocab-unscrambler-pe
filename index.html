@@ -1,0 +1,44 @@
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Vocabulary Unscrambler</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+  <link rel="stylesheet" href="https://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+  <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+  <script src="https://code.jquery.com/ui/1.13.2/jquery-ui.js"></script>
+</head>
+
+<body>
+  <div id="particles-js"></div>
+  <div class="container">
+    <h1>Vocabulary Unscrambler</h1>
+    <h2>(PE)</h2>
+    <div id="timer">Time: <span id="time">0</span></div>
+    <div id="letter-cards">
+    </div>
+    <div id="selected-letters"></div>
+    <button id="start-game">Start</button>
+    <button id="submit-guess" disabled style="display: none;">Submit</button>
+    <button id="skip-word" style="display: none;">Skip</button>
+    <div id="message"></div>
+    <div id="score">Score: 0</div>
+    </div>
+    <div id="finalCongratulations" style="display: none;">
+      <h2>👏Congratulations!👏</h2>
+      <p id="finalMessage"></p>
+    </div>
+  </div>
+  <div id="confetti-canvas"></div>
+  <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+  <script type="module" src="script.js"></script>
+  <script>
+    particlesJS.load('particles-js', 'particles.json', function() {
+      console.log('particles.json loaded...');
+    });
+  </script>
+</body>
+
+</html>
